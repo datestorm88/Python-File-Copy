@@ -1,0 +1,19 @@
+import shutil
+
+def copy_file():
+    """
+    This function copies a file from the F:\in\ folder to the F:\out\ folder.
+    """
+    try:
+        # Set the source and destination paths
+        src_path = r"F:\in\file.txt"
+        dst_path = r"F:\out\file.txt"
+        
+        # Copy the file
+        shutil.copy(src_path, dst_path)
+        
+        # Log the success message
+        print("File copied successfully!")
+    except Exception as e:
+        # Log the error
+        print(f"Error: {e}")
